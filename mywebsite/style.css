@@ -1,0 +1,162 @@
+:root {
+    --primary: #0d6efd;
+    --dark: #343a40;
+    --muted: #6c757d
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, "Tajawal", sans-serif;
+    background: #f5f6fb;
+    color: #222;
+    direction: rtl;
+    text-align: right
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    padding: 18px 20px
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.hero {
+    background-image: linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.75)), url('');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 16px;
+    color: #fff
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin: 0 0 8px
+}
+
+.hero p {
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 36px 16px
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.06)
+}
+
+.card:hover {
+    transition: 0.5s;
+    transform: scale(0.8);
+    
+}
+
+.card h3 {
+    margin-top: 0
+}
+
+#contact {
+    background: #fff;
+    padding: 30px 16px;
+    border-top: 1px solid #eee
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical
+}
+
+.muted {
+    color: blue;
+    font-size: 14px
+}
+
+footer {
+    background: var(--dark);
+    color: #fff;
+    padding: 18px;
+    text-align: center
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.contact-line {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.icon {
+    background: #fff;
+    color: var(--primary);
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 700
+}
+
+@media(max-width:640px) {
+    .hero h1 {
+        font-size: 26px
+    }
+}
